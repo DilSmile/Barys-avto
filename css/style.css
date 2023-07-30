@@ -1,0 +1,1160 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Heebo", sans-serif;
+  color: #21243d;
+}
+
+._container, .footer__barys-avto_container, .section__barys-avto__container, .section__features__container, .section__sale__containter, .section__service__container, .section__benefits__container, .section__content-block__container, .section__header__about-block__container, .header__navbar_nav, .header__top-block__container {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+@media (max-width: 1156px) {
+  ._container, .footer__barys-avto_container, .section__barys-avto__container, .section__features__container, .section__sale__containter, .section__service__container, .section__benefits__container, .section__content-block__container, .section__header__about-block__container, .header__navbar_nav, .header__top-block__container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  ._container, .footer__barys-avto_container, .section__barys-avto__container, .section__features__container, .section__sale__containter, .section__service__container, .section__benefits__container, .section__content-block__container, .section__header__about-block__container, .header__navbar_nav, .header__top-block__container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768.98px) {
+  ._container, .footer__barys-avto_container, .section__barys-avto__container, .section__features__container, .section__sale__containter, .section__service__container, .section__benefits__container, .section__content-block__container, .section__header__about-block__container, .header__navbar_nav, .header__top-block__container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+._header_style, .section__barys-avto__contact__header, .section__barys-avto__header, .section__features__header, .section__sale__header, .section__service__header, .section__benefits__header, .section__content-block__info-header, .section__content-block__title, .section__header__about-block__title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 768.98px) {
+  ._header_style, .section__barys-avto__contact__header, .section__barys-avto__header, .section__features__header, .section__sale__header, .section__service__header, .section__benefits__header, .section__content-block__info-header, .section__content-block__title, .section__header__about-block__title {
+    text-align: center;
+  }
+}
+@media (max-width: 479.98px) {
+  ._header_style, .section__barys-avto__contact__header, .section__barys-avto__header, .section__features__header, .section__sale__header, .section__service__header, .section__benefits__header, .section__content-block__info-header, .section__content-block__title, .section__header__about-block__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.span_style, .section__barys-avto__header_span, .section__features__consulting__info-text__span, .section__features__box_text__span, .section__features__header_span, .section__sale__header__span, .section__service__header__subtext__span, .section__content-block__info-box__text__span, .section__content-block__info-header__span, .section__content-block_box-advantages__header, .section__content-block__title__span {
+  color: #eb2629;
+  font-weight: bolder;
+}
+
+.section_background, .section__barys-avto, .section__features, .section__sale, .section__service, .section__benefits, .section__content-block {
+  background-color: #e5e5e5;
+  padding-top: 80px;
+}
+@media (max-width: 479.98px) {
+  .section_background, .section__barys-avto, .section__features, .section__sale, .section__service, .section__benefits, .section__content-block {
+    padding-top: 31px;
+  }
+}
+@media (max-width: 330px) {
+  .section_background, .section__barys-avto, .section__features, .section__sale, .section__service, .section__benefits, .section__content-block {
+    padding-top: 24px;
+  }
+}
+
+.box_text, .section__benefits__box__text {
+  line-height: 26px;
+  font-size: 16px;
+  padding: 66px 34px 65px 34px;
+  text-align: center;
+}
+
+.box_wrap_container, .section__barys-avto__benefits-box-all, .section__features__box-all, .section__benefits__box_all, .section__content-block__info-box-all, .section__content-block_box-advantages-all {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 55px 0px 90px 0px;
+}
+@media (max-width: 479.98px) {
+  .box_wrap_container, .section__barys-avto__benefits-box-all, .section__features__box-all, .section__benefits__box_all, .section__content-block__info-box-all, .section__content-block_box-advantages-all {
+    padding: 7px 0 46px 0px;
+  }
+}
+@media (max-width: 330px) {
+  .box_wrap_container, .section__barys-avto__benefits-box-all, .section__features__box-all, .section__benefits__box_all, .section__content-block__info-box-all, .section__content-block_box-advantages-all {
+    padding-bottom: 38px;
+  }
+}
+
+.box_wrap, .section__features__box, .section__benefits__box, .section__content-block__info-box_one, .section__content-block__info-box_two, .section__content-block__info-box_three, .section__content-block_box-advantages {
+  width: 31%;
+  margin: 10px;
+}
+@media (max-width: 991.98px) {
+  .box_wrap, .section__features__box, .section__benefits__box, .section__content-block__info-box_one, .section__content-block__info-box_two, .section__content-block__info-box_three, .section__content-block_box-advantages {
+    width: 30%;
+  }
+}
+@media (max-width: 479.98px) {
+  .box_wrap, .section__features__box, .section__benefits__box, .section__content-block__info-box_one, .section__content-block__info-box_two, .section__content-block__info-box_three, .section__content-block_box-advantages {
+    width: 100%;
+  }
+}
+.box_border, .section__features__box, .section__content-block__info-box_one, .section__content-block__info-box_two, .section__content-block__info-box_three {
+  border: 1px #eb2629 solid;
+  border-bottom: 14px #eb2629 solid;
+}
+
+.subtext_style, .section__barys-avto__contact__subtext, .section__sale__header__subtext, .section__service__header__subtext, .section__header__about-block__subtext {
+  padding: 11px 5px 30px 0px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000;
+}
+@media (max-width: 479.98px) {
+  .subtext_style, .section__barys-avto__contact__subtext, .section__sale__header__subtext, .section__service__header__subtext, .section__header__about-block__subtext {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.text_with_back_red, .section__barys-avto__contact__phone, .section__barys-avto__contact__text_div, .section__features__consulting__info-text-subtext {
+  font-weight: bolder;
+  line-height: 31px;
+  color: white;
+  margin: 21px 726px 22px 0;
+  background-color: red;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.sale_box_text, .section__sale__box__text, .section__service__box__text {
+  font-size: 15px;
+  padding-bottom: 14px;
+  line-height: 23px;
+}
+
+.check_image_style, .section__benefits__box__image_center, .section__benefits__box__image {
+  left: 134px;
+  top: -23px;
+  position: absolute;
+}
+
+.info_box_text_style, .section__features__box_text, .section__content-block__info-box__text {
+  text-align: start;
+  font-size: 18px;
+  color: #fff;
+  padding: 66px 20px 65px 20px;
+  line-height: 26px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header__top-block__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.header__top-block__logo {
+  width: 36%;
+  height: 89%;
+}
+@media (max-width: 479.98px) {
+  .header__top-block__logo {
+    width: 41%;
+    height: 90%;
+  }
+}
+@media (max-width: 330px) {
+  .header__top-block__logo {
+    width: 49%;
+    height: 57%;
+  }
+}
+.header__top-block__p-text {
+  padding: 8px 17px 8px 17px;
+  line-height: 16px;
+}
+@media (max-width: 479.98px) {
+  .header__top-block__p-text {
+    font-size: 10px;
+  }
+}
+.header__top-block__a-phone {
+  font-size: 23px;
+  font-weight: bolder;
+}
+.header__top-block__left-side {
+  display: flex;
+}
+.header__top-block__right-side {
+  line-height: 23px;
+  text-align: end;
+}
+@media (max-width: 479.98px) {
+  .header__top-block__right-side {
+    width: 67%;
+  }
+}
+@media (max-width: 330px) {
+  .header__top-block__right-side {
+    width: 102%;
+  }
+}
+.header__top-block__a-phone {
+  font-size: 23px;
+  font-weight: bolder;
+}
+@media (max-width: 991.98px) {
+  .header__top-block__a-phone {
+    font-size: 19px;
+    font-weight: 900;
+  }
+}
+@media (max-width: 479.98px) {
+  .header__top-block__a-phone {
+    font-size: 14px;
+  }
+}
+.header__top-block__a-phone:hover {
+  color: #eb2629;
+}
+@media (max-width: 479.98px) {
+  .header__top-block__p-mail {
+    font-size: 10px;
+  }
+}
+
+.header__navbar {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+.header__navbar_nav {
+  height: 50px;
+  padding-top: 10px;
+}
+.header__navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .header__navbar ul {
+    position: fixed;
+    top: 150px;
+    left: -100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: white;
+    height: auto;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 991.98px) {
+  .header__navbar ul {
+    top: 142px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 768.98px) {
+  .header__navbar ul {
+    top: 160px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 479.98px) {
+  .header__navbar ul {
+    top: 143px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 330px) {
+  .header__navbar ul {
+    top: 155px;
+  }
+}
+.header__navbar li {
+  float: left;
+  margin: 0 5px;
+}
+@media (max-width: 991.98px) {
+  .header__navbar li {
+    float: none;
+  }
+}
+.header__navbar li a {
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  padding: 14px 9px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease;
+}
+@media (max-width: 991.98px) {
+  .header__navbar li a {
+    font-size: 16px;
+    display: block;
+  }
+}
+@media (max-width: 479.98px) {
+  .header__navbar li a {
+    font-size: 13px;
+  }
+}
+.header__navbar li a:hover,
+.header__navbar li a.active {
+  -webkit-text-decoration: underline #eb2629 5px;
+          text-decoration: underline #eb2629 5px;
+  font-weight: bolder;
+}
+@media (max-width: 991.98px) {
+  .header__navbar li a.active {
+    text-decoration: none;
+  }
+}
+.header__navbar .menu-btn i {
+  color: #000000;
+  cursor: pointer;
+  display: none;
+  font-size: 27px;
+  text-align: right;
+  /* Здесь нужно добавить медию */
+}
+@media (max-width: 991.98px) {
+  .header__navbar .menu-btn i {
+    display: block;
+  }
+}
+@media (max-width: 330px) {
+  .header__navbar .menu-btn i {
+    font-size: 24px;
+  }
+}
+.header__navbar #click {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .header__navbar #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .header__navbar #click:checked ~ ul {
+    left: 0%;
+  }
+}
+
+.section__header__about-block {
+  background-color: #e5e5e5;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background-image: url("https://khalel98.github.io/AutoBarys/img/home/toyota.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right top;
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  .section__header__about-block {
+    padding-top: 17px;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__header__about-block {
+    background-image: none;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__header__about-block {
+    padding: 42px 0;
+  }
+}
+.section__header__about-block__title {
+  font-size: 60px;
+  line-height: 70px;
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  .section__header__about-block__title {
+    font-size: 42px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__header__about-block__title {
+    font-size: 23px;
+    line-height: 37px;
+  }
+}
+.section__header__about-block__subtext {
+  padding: 43px 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+@media (max-width: 768.98px) {
+  .section__header__about-block__subtext {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__header__about-block__subtext {
+    font-size: 12px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__header__about-block__map {
+    margin: 0px 225px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__header__about-block__map {
+    margin: 0px 73px;
+  }
+}
+@media (max-width: 330px) {
+  .section__header__about-block__map {
+    margin: 0 32px;
+  }
+}
+.section__header__about-block__map-image {
+  width: 95px;
+  height: 82px;
+}
+.section__header__about-block__map-link {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  position: absolute;
+  margin-top: 39px;
+  margin-left: 23px;
+  color: #000;
+}
+.section__header__about-block__map-link:hover {
+  color: #eb2629;
+}
+
+.section__content-block {
+  background-color: #000;
+}
+@media (max-width: 991.98px) {
+  .section__content-block_box-advantages-all {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__content-block_box-advantages-all {
+    padding: 48px 0;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 330px) {
+  .section__content-block_box-advantages-all {
+    padding: 38px 0;
+  }
+}
+.section__content-block_box-advantages {
+  background: white;
+}
+.section__content-block_box-advantages__text {
+  text-align: center;
+}
+.section__content-block_box-advantages__header {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 12px 5px 4px 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 991.98px) {
+  .section__content-block_box-advantages__header {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__content-block_box-advantages__header {
+    font-size: 20px;
+  }
+}
+.section__content-block_box-advantages__subtext {
+  font-size: 18px;
+  padding: 7px 40px 40px 35px;
+  line-height: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+@media (max-width: 991.98px) {
+  .section__content-block_box-advantages__subtext {
+    padding: 7px 5px 7px 5px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__content-block__info-box-all {
+    flex-wrap: nowrap;
+    padding: 45px 0px 53px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__content-block__info-box-all {
+    flex-wrap: wrap;
+    padding: 45px 0px 189px 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__content-block__info-box__text {
+    font-size: 18px;
+    padding: 16px 6px 16px 6px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__content-block__info-box__text {
+    font-size: 18px;
+    padding: 66px 6px 16px 6px;
+  }
+}
+.section__content-block__info-box__text__span {
+  color: #fff;
+}
+.section__content-block__info-box_one, .section__content-block__info-box_two, .section__content-block__info-box_three {
+  background-image: url("https://khalel98.github.io/AutoBarys/img/terms/first.png");
+  background-repeat: no-repeat;
+  background-size: 33%;
+  background-position: 20px 20px;
+  padding: 15px;
+}
+.section__content-block__info-box_two {
+  background-image: url("https://khalel98.github.io/AutoBarys/img/terms/second.png");
+}
+.section__content-block__info-box_three {
+  background-image: url("https://khalel98.github.io/AutoBarys/img/terms/third.png");
+}
+.section__content-block-image {
+  position: absolute;
+  margin-top: -225px;
+  height: 51%;
+  width: 33%;
+  padding-bottom: 30px;
+}
+@media (max-width: 991.98px) {
+  .section__content-block-image {
+    margin-top: -169px;
+    height: 27%;
+    width: 37%;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__content-block-image {
+    margin-top: -122px;
+    height: 18%;
+    width: 37%;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__content-block-image {
+    margin-top: -192px;
+    height: 30%;
+    width: 71%;
+  }
+}
+@media (max-width: 330px) {
+  .section__content-block-image {
+    margin-top: -210px;
+    height: 41%;
+    width: 100%;
+  }
+}
+.section__benefits__header {
+  color: black;
+  text-align: center;
+}
+.section__benefits__header__subtext {
+  text-align: center;
+  font-size: 15px;
+  padding: 14px 10px;
+}
+@media (max-width: 330px) {
+  .section__benefits__header__subtext {
+    line-height: 23px;
+  }
+}
+.section__benefits__box {
+  background-color: #fff;
+  position: relative;
+  padding: 20px 26px 18px 13px;
+  margin-top: 24px;
+}
+@media (max-width: 991.98px) {
+  .section__benefits__box {
+    margin-top: 33px;
+  }
+}
+.section__benefits__box__text {
+  padding: 17px 12px 27px 12px;
+}
+@media (max-width: 330px) {
+  .section__benefits__box__text {
+    font-size: 15px;
+  }
+}
+.section__benefits__box_center {
+  width: 100%;
+  margin: 30px 285px 6px 285px;
+  background-color: #fff;
+  position: relative;
+  padding: 20px 26px 18px 13px;
+}
+@media (max-width: 991.98px) {
+  .section__benefits__box_center {
+    margin: 30px 18px 6px 11px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__benefits__box_center {
+    margin: 30px 12px 8px 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__benefits__box__image {
+    left: 75px;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__benefits__box__image {
+    left: 70px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__benefits__box__image {
+    left: 153px;
+  }
+}
+@media (max-width: 330px) {
+  .section__benefits__box__image {
+    left: 105px;
+  }
+}
+.section__benefits__box__image_center {
+  left: 234px;
+}
+@media (max-width: 991.98px) {
+  .section__benefits__box__image_center {
+    left: 305px;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__benefits__box__image_center {
+    left: 300px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__benefits__box__image_center {
+    left: 152px;
+  }
+}
+@media (max-width: 330px) {
+  .section__benefits__box__image_center {
+    left: 105px;
+  }
+}
+.section__service__header {
+  color: #000;
+}
+.section__service__box-all {
+  border: 9px #eb2629 solid;
+  padding: 38px;
+}
+.section__service__box__header {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 37px;
+  color: #000;
+}
+@media (max-width: 479.98px) {
+  .section__service__box__header {
+    padding-bottom: 18px;
+  }
+}
+.section__service__box__image {
+  position: absolute;
+  margin: 8px 0px 0 -14px;
+}
+.section__service_car {
+  margin-top: -71px;
+  float: right;
+}
+@media (max-width: 991.98px) {
+  .section__service_car {
+    display: none;
+  }
+}
+.section__service_car-image {
+  width: 487px;
+}
+.section__sale {
+  background-image: url("https://khalel98.github.io/AutoBarys/img/advantages/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section__sale__header {
+  color: #000;
+  text-align: center;
+}
+.section__sale__header__subtext {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 17px;
+}
+@media (max-width: 479.98px) {
+  .section__sale__header__subtext {
+    padding-bottom: 0px;
+  }
+}
+.section__sale__box-all {
+  padding: 38px;
+}
+.section__sale__box__image {
+  position: absolute;
+  margin: 3px 0px 2px -23px;
+  height: 15px;
+  width: 13px;
+}
+.section__sale__tires {
+  margin-top: -147px;
+  float: right;
+}
+@media (max-width: 991.98px) {
+  .section__sale__tires {
+    display: none;
+  }
+}
+.section__sale__tires__image {
+  width: 200px;
+}
+.section__features {
+  color: #fff;
+  background-color: #000;
+  background-image: url("https://khalel98.github.io/AutoBarys/img/features/jeep.png");
+  background-repeat: no-repeat;
+  background-size: 788px;
+  background-position-y: bottom;
+}
+@media (max-width: 991.98px) {
+  .section__features {
+    background-image: none;
+  }
+}
+.section__features__box {
+  position: relative;
+  margin-top: 64px;
+}
+.section__features__box_text {
+  padding: 120px 20px 27px 20px;
+}
+.section__features__box_text__span {
+  color: #fff;
+}
+.section__features__box__image {
+  position: absolute;
+  top: -50px;
+  left: 74px;
+  width: 195px;
+  height: 154px;
+}
+@media (max-width: 991.98px) {
+  .section__features__box__image {
+    margin: 30px 18px 6px 11px;
+    left: 14px;
+    width: 162px;
+    height: 131px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__features__box__image {
+    top: -75px;
+    left: 57px;
+    width: 220px;
+    height: 165px;
+  }
+}
+@media (max-width: 330px) {
+  .section__features__box__image {
+    left: 16px;
+  }
+}
+.section__features__consulting {
+  padding-top: 105px;
+}
+@media (max-width: 479.98px) {
+  .section__features__consulting {
+    padding-top: 0px;
+    padding-bottom: 23px;
+  }
+}
+.section__features__consulting__info-text {
+  background-color: white;
+  font-size: 17px;
+  line-height: 30px;
+  color: black;
+  padding: 30px 27px 66px 37px;
+  margin: 32px 24px 0px 328px;
+  position: relative;
+  font-family: sans-serif;
+}
+@media (max-width: 991.98px) {
+  .section__features__consulting__info-text {
+    padding: 14px;
+    margin: auto;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__features__consulting__info-text {
+    padding: 10px;
+    position: unset;
+  }
+}
+.section__features__consulting__info-text__span {
+  color: #000;
+}
+.section__features__consulting__info-text-subtext {
+  line-height: 44px;
+  margin: 0px 85px 0px 386px;
+  font-size: 35px;
+  padding: 21px;
+  position: absolute;
+  top: 158px;
+  font-weight: 900;
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .section__features__consulting__info-text-subtext {
+    line-height: 41px;
+    margin: 22px 2px 0px -2px;
+    font-size: 30px;
+    padding: 21px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768.98px) {
+  .section__features__consulting__info-text-subtext {
+    margin: 35px 2px 0px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__features__consulting__info-text-subtext {
+    position: unset;
+    top: auto;
+    margin: 19px 0px;
+    line-height: 26px;
+    font-size: 22px;
+    padding: 0px;
+    font-weight: 900;
+  }
+}
+.section__features__consulting__info-div {
+  top: -194px;
+  position: relative;
+}
+@media (max-width: 479.98px) {
+  .section__features__consulting__info-div {
+    position: unset;
+    top: auto;
+  }
+}
+.section__barys-avto__header {
+  text-align: center;
+  color: #000;
+}
+.section__barys-avto__benefits-box {
+  background-color: #fff;
+  width: 47%;
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto__benefits-box {
+    width: 44%;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__barys-avto__benefits-box {
+    width: 100%;
+  }
+}
+@media (max-width: 330px) {
+  .section__barys-avto__benefits-box {
+    height: 100%;
+    margin: 10px;
+  }
+}
+.section__barys-avto__benefits__image {
+  width: 21%;
+  height: 57%;
+}
+.section__barys-avto__benefits__text {
+  font-size: 18px;
+  line-height: 26px;
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto__benefits__text {
+    font-size: 16px;
+  }
+}
+.section__barys-avto__benefits__text_span {
+  font-weight: bold;
+}
+.section__barys-avto__contact {
+  padding-bottom: 40px;
+}
+.section__barys-avto__contact__header {
+  color: #000;
+  font-size: 53px;
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto__contact__header {
+    font-size: 38px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__barys-avto__contact__header {
+    font-size: 36px;
+  }
+}
+@media (max-width: 330px) {
+  .section__barys-avto__contact__header {
+    font-size: 30px;
+  }
+}
+.section__barys-avto__contact__subtext {
+  padding: 30px 5px;
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto__contact__subtext {
+    font-size: 25px;
+  }
+}
+@media (max-width: 330px) {
+  .section__barys-avto__contact__subtext {
+    padding: 25px 5px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto__contact__text_div {
+    margin: 21px 344px 22px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__barys-avto__contact__text_div {
+    margin: 21px 5px;
+  }
+}
+.section__barys-avto__contact__phone {
+  text-align: center;
+  font-size: 35px;
+  background-color: #fff;
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto__contact__phone {
+    margin: 21px 345px 22px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__barys-avto__contact__phone {
+    margin: 21px 5px;
+  }
+}
+.section__barys-avto__contact__phone-number {
+  color: #000;
+}
+.section__barys-avto__contact__phone-number:hover {
+  color: #ff6464;
+}
+.section__barys-avto_item__image {
+  height: 71%;
+  width: 25%;
+  margin-top: -394px;
+  margin-left: 846px;
+  position: absolute;
+}
+@media (max-width: 991.98px) {
+  .section__barys-avto_item__image {
+    width: 28%;
+    margin-top: -310px;
+    margin-left: 490px;
+    height: 37%;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__barys-avto_item__image {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .iframe__map {
+    width: 820px;
+  }
+}
+@media (max-width: 768.98px) {
+  .iframe__map {
+    width: 100%;
+  }
+}
+
+.footer__barys-avto {
+  margin-top: 40px;
+}
+.footer__barys-avto_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 479.98px) {
+  .footer__barys-avto_boxes {
+    display: block;
+  }
+}
+.footer__barys-avto__logo {
+  width: 71%;
+  height: 56%;
+}
+.footer__barys-avto__logo-subtext {
+  padding: 14px 0 14px 0;
+}
+@media (max-width: 768.98px) {
+  .footer__barys-avto__logo-box {
+    text-align: center;
+  }
+}
+.footer__barys-avto_text, .footer__barys-avto_location {
+  display: grid;
+  grid-template-rows: auto;
+  font-size: 16px;
+  text-align: end;
+}
+@media (max-width: 768.98px) {
+  .footer__barys-avto_text, .footer__barys-avto_location {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+.footer__barys-avto_text__link, .footer__barys-avto_location__link {
+  color: #000;
+}
+.footer__barys-avto_text__link:hover, .footer__barys-avto_location__link:hover {
+  color: #eb2629;
+}
+@media (max-width: 991.98px) {
+  .footer__barys-avto_text__link, .footer__barys-avto_location__link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768.98px) {
+  .footer__barys-avto_text__link, .footer__barys-avto_location__link {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .footer__barys-avto_location {
+    line-height: 26px;
+  }
+}
+.footer__barys-avto-phone {
+  font-size: 27px;
+  font-weight: bolder;
+  color: #000;
+}
+.footer__barys-avto-phone:hover {
+  color: #eb2629;
+}
+@media (max-width: 991.98px) {
+  .footer__barys-avto-phone {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.footer__barys-avto__city {
+  color: #000;
+}
+.footer__barys-avto__city:hover {
+  color: #eb2629;
+}
+.footer__barys-avto__copyright {
+  padding: 20px 0 20px 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
